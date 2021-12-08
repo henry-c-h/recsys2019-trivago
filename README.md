@@ -21,7 +21,12 @@ Due to limited computing resources, I only used part of the logging data for tra
 
 ## Reproducing the solution
 - Put competition datasets into data folder (train.csv/test.csv/validation.csv/confirmation.csv/item_metadata.csv)
-- Run data_prep.py
-- Run lgb_cv.py
+- Run ```python 3 data_prep.py```
+- Run ```python 3 lgb_cv.py```
 - Data preparation takes about 2 hours
 - 5-fold cross validation takes about 1 hour each for both the classifier and ranker model
+- main library version
+    - pandas==1.3.3
+    - numpy==1.20.3
+    - lightgbm==3.2.1
+    - sklearn==1.0
